@@ -44,6 +44,6 @@ $db->addServer(array (
   'charset' => 'utf8mb4',
   'engine' => 'InnoDB',
   'sslCa' => dirname(__FILE__) . '/tidb_ca.pem',
-  'sslVerify' => true,
+  'sslVerify' => false,
 ), Typecho_Db::READ | Typecho_Db::WRITE);
 Typecho_Db::set($db);
